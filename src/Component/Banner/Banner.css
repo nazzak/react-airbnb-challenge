@@ -52,3 +52,8 @@ important is needed when you override the default styling of material UI
     text-transform: inherit !important;
     color: #ff7779 !important;
 }
+
+.banner__search {
+    display: flex;
+    flex-direction: column;
+}
