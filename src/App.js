@@ -17,7 +17,6 @@ function App() {
             {/* Cards */}
             {/* Footer */}
         {/*Search Page */}
-
     </div>
   );
 }
