@@ -1,0 +1,58 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    /* 
+    position sticky + top 0 keep the header 
+    on the top when scrolling 
+    */
+    position: sticky; 
+    top: 0;
+
+    background-color: white;
+
+    /* 
+    put the header on the top of everything
+    */
+    z-index: 100;
+    
+}
+
+.header__center {
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
+    padding: 10px;
+    height: 30px;
+    border: 1px solid lightgray;
+    border-radius: 999px;
+}
+
+/* 
+    this is how you target an element
+    */
+    .header__center > input
+    {
+        border: none;
+        padding: 10px;
+        /* Remove outlie when text on search clicked*/
+        outline: 0;
+        
+    }
+
+.header__icon {
+    object-fit: contain;
+    height: 100px;
+    margin-left: 20px;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15vw;
+    margin-right: 20px;
+}

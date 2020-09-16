@@ -1,14 +1,23 @@
 import React from 'react';
 import './App.css';
+import Header from './Component/Header/Header';
+import Home from './Component/home/Home';
 
 function App() {
   return (
 
     
     <div className="app">
-      <header className="App-header">
-        <h1>Cleaned Up</h1>
-      </header>
+
+        
+        <Header />
+        <Home />
+            {/* Header */}
+            {/* Banner (include search date)*/}
+            {/* Cards */}
+            {/* Footer */}
+        {/*Search Page */}
+
     </div>
   );
 }
