@@ -24,6 +24,7 @@ function App() {
           </Route>
 
           {/* / */}
+          {/* Default home page always at the bottom (fallback)*/}
           <Route path="/">
             <Home />
           </Route>
