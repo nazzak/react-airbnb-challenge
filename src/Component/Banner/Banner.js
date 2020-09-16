@@ -17,7 +17,7 @@ function Banner() {
             <div class="banner__search">
             {showSearch === true ? <Search /> : undefined }
                 <Button onClick={() => toggleSearchButton()} className='banner__searchButton' variant='outlined'>
-                {showSearch === false ? "Search Dates" : "Hide"} 
+                {showSearch ? "Hide" : "Search Dates"} 
                 </Button>
             </div>
             <div class="banner__info">

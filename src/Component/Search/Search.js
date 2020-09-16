@@ -1,4 +1,4 @@
-import React, {useState }from 'react'
+import React, { useState } from 'react'
 import './Search.css';
 
 //DATE PICKER STYLE as recomended by the developer
@@ -6,7 +6,10 @@ import "react-date-range/dist/styles.css"
 // main style file
 import "react-date-range/dist/theme/default.css"
 // component
-import  { DateRangePicker } from "react-date-range"
+import { DateRangePicker } from "react-date-range"
+
+import { Button } from "@material-ui/core"
+import PeopleIcon from "@material-ui/icons/People"
 
 
 //CALENDAR
@@ -29,9 +32,17 @@ function Search() {
     return (
         <div className='search'>
             <DateRangePicker
-        ranges={[selectionRange]}
-        onChange={handleSelect}
-      />
+                ranges={[selectionRange]}
+                onChange={handleSelect}
+            />
+            <h2>
+                Number of guests
+                <PeopleIcon/>
+            </h2>
+            <input min={0}
+                defaultValue={2}
+                type="number" />
+            <Button>Search Airbnb</Button>
         </div>
     )
 }

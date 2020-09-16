@@ -32,9 +32,9 @@
 }
 
 /* 
-    this is how you target an element
-    */
-    .header__center > input
+this is how you target an element
+*/
+.header__center > input
     {
         border: none;
         padding: 10px;
