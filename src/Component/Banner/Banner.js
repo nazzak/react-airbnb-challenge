@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Banner.css'
 import { Button } from "@material-ui/core"
+import Search from '../Search/Search'
 
 
 
@@ -14,16 +15,10 @@ function Banner() {
     return (
         <div className="banner">
             <div class="banner__search">
+            {showSearch === true ? <Search /> : undefined }
                 <Button onClick={() => toggleSearchButton()} className='banner__searchButton' variant='outlined'>
-                {showSearch === true ? "Search Dates" : "Hide"} 
+                {showSearch === false ? "Search Dates" : "Hide"} 
                 </Button>
-                {showSearch === true ?
-                        <h1>
-                            true
-                        </h1>
-                        :
-                        undefined
-                    }
             </div>
             <div class="banner__info">
                 <h1>
