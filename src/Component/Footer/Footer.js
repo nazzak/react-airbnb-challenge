@@ -4,7 +4,8 @@ import './Footer.css'
 function Footer() {
     return (
         <div className="footer">
-            <h1>I'm the footer</h1>
+            <p>2020 Airbnb clone! No rights reserved - this is a demo application</p>
+            <p>Privacy . Terms . Sitemap . built by NAZZAK</p>
         </div>
     )
 }
