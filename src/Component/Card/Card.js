@@ -6,9 +6,12 @@ function Card(props) { //props: src, title, price, description
         <div className="card">
             <img src={props.src} alt=""/>
             {/* Create info */}
-            <h2>{props.title}</h2>
+            <div className="card__info">
+                <h2>{props.title}</h2>
             <h4>{props.description}</h4>
             <h3>{props.price}</h3>
+            </div>
+            
         </div>
     )
 }
