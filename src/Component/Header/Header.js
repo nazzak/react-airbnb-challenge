@@ -25,7 +25,7 @@ function Header() {
 
         <LanguageIcon />
         <ExpandMoreIcon />
-        <Avatar />
+        <Avatar src="/logo512.png" />
       </div>
     </div>
   );
